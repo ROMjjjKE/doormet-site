@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doormet — двери и лазерная резка в Полоцке</title>
+  <meta name="description" content="Профессиональное изготовление металлических дверей, лазерная резка и металлообработка в Полоцке. Бесплатный замер, расчёт и доставка. Гарантия качества.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Doormet - Изготовление дверей и лазерная резка в Полоцке">
+  <meta property="og:description" content="Металлические двери на заказ, лазерная резка, гибка, сварка. Высокое качество, точные сроки, индивидуальный подход.">
+  <meta property="og:image" content="https://doormet.by/og-image.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="theme-color" content="#3B3834">
+  <script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ManufacturingBusiness",
+    "name": "Doormet",
+    "image": "https://doormet.by/og-image.jpg",
+    "url": "https://doormet.by",
+    "telephone": "+375 29 895 0047",
+    "email": "target-555@mail.ru",
+    "priceRange": "от 900 BYN",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Дзержинского 103, строение 5",
+      "addressLocality": "Полоцк",
+      "addressRegion": "Витебская область",
+      "addressCountry": "BY"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 55.487917, "longitude": 28.776111 },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/door_met",
+      "https://t.me/doormet",
+      "https://www.tiktok.com/@door_met"
+    ]
+  }
+  </script>
+
+  <!-- Яндекс.Метрика (тот же счётчик, что был на сайте) -->
+  <script>
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  ym(105478811, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+  </script>
+<style>
+/* ============================================================
+   Doormet — стили сайта
+   Палитра (по фактическому дизайну doormet.by):
+   #4A4639 — тёмный оливково-серый (шапка, подвал, текст)
+   #F3F0EC — светлый беж (фон секций)
+   #E8E3DC — беж карточек
+   #C4A572 / #D4B582 — золото (акценты, бейдж)
+   ============================================================ */
+
+:root {
+  --dark: #4A4639;
+  --dark-deep: #3B3834;
+  --beige: #F3F0EC;
+  --card: #E8E3DC;
+  --gold: #C4A572;
+  --gold-light: #D4B582;
+  --muted: #8B7E5C;
+  --text: #3B3834;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: #fff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+.container { max-width: 1152px; margin: 0 auto; padding: 0 1rem; }
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .9rem 2rem; border: 2px solid transparent; border-radius: .5rem; cursor: pointer;
+  font-size: 1rem; font-weight: 500; transition: background .2s, color .2s, border-color .2s;
+}
+.btn-solid { background: var(--dark); color: #fff; }
+.btn-solid:hover { background: var(--dark-deep); }
+.btn-outline { background: transparent; border-color: var(--dark); color: var(--dark); }
+.btn-outline:hover { background: var(--dark); color: #fff; }
+.btn-gold { background: var(--gold); color: var(--text); border: none; }
+.btn-gold:hover { background: var(--gold-light); }
+
+/* ---------- Шапка ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--dark-deep); color: #fff;
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: .7rem 0; gap: 1rem; }
+.logo { display: flex; align-items: center; gap: .5rem; font-weight: 700; font-size: 1.2rem; color: #fff; }
+.logo img { height: 38px; width: auto; }
+.main-nav ul { display: flex; gap: 1.5rem; }
+.main-nav a { color: rgba(255,255,255,.85); font-size: .95rem; }
+.main-nav a:hover { color: #fff; }
+.header-right { display: flex; align-items: center; gap: 1rem; }
+.header-phone { color: #fff; font-weight: 600; font-size: .95rem; white-space: nowrap; }
+.header-socials { display: flex; gap: .5rem; }
+.header-socials a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%; color: #fff; font-size: .8rem; font-weight: 700;
+}
+.header-socials a.tg { background: #229ED9; }
+.header-socials a.wa { background: #25D366; }
+.header-socials a.vb { background: #7360F2; }
+.burger { display: none; background: none; border: none; color: #fff; cursor: pointer; font-size: 1.1rem; }
+
+@media (max-width: 900px) {
+  .header-phone { display: none; }
+}
+@media (max-width: 768px) {
+  .burger { display: block; }
+  .main-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--dark-deep); }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; padding: 1rem 1.5rem 1.5rem; gap: 1rem; }
+  .header-right .header-socials { display: none; }
+}
+
+/* ---------- Hero (светлый, фото справа) ---------- */
+.hero { padding: 4.5rem 0 5rem; }
+.hero-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+.hero .brand { font-size: 3rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.05; margin-bottom: 1rem; }
+.hero .lead { font-size: 1.15rem; color: rgba(59,56,52,.8); margin-bottom: 1.5rem; max-width: 34rem; }
+.hero-bullets { margin-bottom: 2rem; display: flex; flex-direction: column; gap: .6rem; }
+.hero-bullets li { display: flex; align-items: center; gap: .6rem; font-weight: 500; }
+.hero-bullets .check {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%; background: var(--gold); color: var(--text);
+  font-size: .75rem; font-weight: 700; flex: 0 0 22px;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.hero-photo { position: relative; }
+.hero-photo img { border-radius: .75rem; box-shadow: 0 20px 45px rgba(59,56,52,.25); width: 100%; object-fit: cover; }
+.experience-badge {
+  position: absolute; left: -1.25rem; bottom: -1.5rem;
+  background: var(--gold); color: var(--text); padding: 1.1rem 1.4rem; border-radius: .5rem;
+  box-shadow: 0 10px 25px rgba(59,56,52,.3);
+  display: flex; align-items: center; gap: .8rem;
+}
+.experience-badge .num { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+.experience-badge .cap { font-size: .8rem; font-weight: 600; }
+@media (max-width: 768px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .experience-badge { left: 1rem; }
+}
+
+/* ---------- Секции ---------- */
+.section { padding: 4rem 0; }
+.section-beige { background: var(--beige); }
+.section-dark { background: var(--dark); color: #fff; }
+.section-title { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .75rem; text-align: center; }
+.section-subtitle { text-align: center; color: rgba(59,56,52,.7); margin-bottom: 2.5rem; }
+.section-dark .section-title { color: #fff; }
+.section-dark .section-subtitle { color: rgba(255,255,255,.7); }
+
+/* ---------- О нас: 3 карточки с иконками ---------- */
+.about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+.about-card {
+  background: var(--card); border-radius: .75rem; padding: 2rem 1.5rem; text-align: center;
+}
+.about-card .icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px; border-radius: 50%; margin-bottom: 1rem;
+  background: var(--gold); color: var(--text);
+}
+.about-card .icon svg { width: 28px; height: 28px; }
+.about-card h3 { font-size: 1.05rem; margin-bottom: .5rem; }
+.about-card p { font-size: .9rem; color: rgba(59,56,52,.8); }
+
+/* ---------- Услуги: большие горизонтальные карточки ---------- */
+.services-row { display: flex; flex-direction: column; gap: 1.75rem; max-width: 900px; margin: 0 auto; }
+.service-card {
+  display: grid; grid-template-columns: 320px 1fr; gap: 0;
+  background: #fff; border-radius: .75rem; overflow: hidden;
+  box-shadow: 0 6px 20px rgba(59,56,52,.12);
+}
+.section-beige .service-card { background: #fff; }
+.service-card > img { width: 100%; height: 100%; min-height: 220px; object-fit: cover; }
+.service-card .body { padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+.service-card h3 { font-size: 1.3rem; margin-bottom: .6rem; }
+.service-card p { color: rgba(59,56,52,.8); margin-bottom: 1.25rem; }
+.service-card .more { color: var(--dark); font-weight: 600; }
+.service-card .more:hover { color: var(--muted); }
+@media (max-width: 768px) {
+  .service-card { grid-template-columns: 1fr; }
+}
+
+/* ---------- Пилюли «Почему выбирают нас» ---------- */
+.pills { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto; }
+.pill {
+  display: flex; align-items: center; gap: .6rem; justify-content: center;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25);
+  border-radius: 999px; padding: .9rem 1.25rem; text-align: center;
+  font-weight: 500; font-size: .95rem;
+}
+.pill .check {
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 20px;
+  width: 20px; height: 20px; border-radius: 50%; background: var(--gold); color: var(--text);
+  font-size: .7rem; font-weight: 700;
+}
+
+/* ---------- Галерея 4x2 ---------- */
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+@media (max-width: 768px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+.gallery-item { border-radius: .5rem; overflow: hidden; position: relative; transition: transform .25s; }
+.gallery-item:hover { transform: scale(1.03); }
+.gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.gallery-item .caption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(transparent, rgba(43,40,36,.85));
+  color: #fff; font-size: .8rem; padding: 1.5rem .75rem .6rem;
+}
+
+/* ---------- Контакты ---------- */
+.contacts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+@media (max-width: 768px) { .contacts-grid { grid-template-columns: 1fr; } }
+.contact-item { margin-bottom: 1.25rem; }
+.contact-item .label { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.contact-item .value { font-size: 1.05rem; font-weight: 600; }
+
+.socials-box {
+  background: var(--beige); border-radius: .75rem; padding: 1.5rem; margin-top: 1.5rem;
+}
+.socials-box .cap { font-weight: 600; margin-bottom: 1rem; }
+.socials-box .row { display: flex; flex-wrap: wrap; gap: .75rem; }
+.messenger {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  color: #fff; font-weight: 500; padding: .75rem 1.5rem; border-radius: .5rem;
+  transition: transform .2s, box-shadow .2s; box-shadow: 0 2px 6px rgba(0,0,0,.12);
+}
+.messenger:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,.18); }
+.messenger.whatsapp { background: #25D366; }
+.messenger.telegram { background: #229ED9; }
+.messenger.viber { background: #7360F2; }
+.messenger.tiktok { background: #000; }
+.messenger.instagram { background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D); }
+
+/* ---------- Форма ---------- */
+.form-card { background: #fff; border-radius: .75rem; padding: 2rem; box-shadow: 0 8px 30px rgba(59,56,52,.12); }
+.form-card h3 { margin-bottom: .5rem; }
+.form-card .hint { font-size: .85rem; color: rgba(59,56,52,.7); margin-bottom: 1.5rem; }
+.form-field { margin-bottom: 1.1rem; }
+.form-field label { display: block; font-size: .85rem; margin-bottom: .35rem; font-weight: 500; }
+.form-field label .req { color: #d4183d; }
+.form-field input, .form-field textarea {
+  width: 100%; padding: .75rem 1rem; border: 1px solid rgba(59,56,52,.3); border-radius: .4rem;
+  font: inherit; background: #fff;
+}
+.form-field input:focus, .form-field textarea:focus { outline: 2px solid var(--gold); border-color: transparent; }
+.form-field .error { color: #d4183d; font-size: .8rem; margin-top: .25rem; }
+.form-check { display: flex; gap: .5rem; align-items: flex-start; font-size: .8rem; margin-bottom: 1.25rem; }
+.form-check input { width: auto; margin-top: .2rem; }
+.form-status { margin-top: 1rem; font-size: .9rem; }
+.form-status.ok { color: #128c7e; }
+.form-status.err { color: #d4183d; }
+
+/* ---------- Карта ---------- */
+.map-frame { width: 100%; height: 400px; border: 0; border-radius: .5rem; box-shadow: 0 12px 30px rgba(59,56,52,.2); }
+.map-note { text-align: center; font-size: .8rem; color: rgba(59,56,52,.7); margin-top: 1.5rem; }
+
+/* ---------- Подвал ---------- */
+.site-footer { background: var(--dark-deep); color: rgba(255,255,255,.8); padding: 2.5rem 0; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; align-items: flex-start; }
+.footer-brand { display: flex; align-items: center; gap: .6rem; color: #fff; font-weight: 700; font-size: 1.15rem; margin-bottom: .5rem; }
+.footer-brand img { height: 34px; }
+.footer-col .line { display: block; margin-bottom: .35rem; font-size: .9rem; }
+.footer-col a:hover, .footer-col .line a:hover { color: var(--gold-light); }
+.footer-socials { display: flex; gap: .5rem; margin-top: .75rem; }
+.footer-socials a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%; color: #fff; font-size: .75rem; font-weight: 700;
+}
+.footer-socials a.tg { background: #229ED9; }
+.footer-socials a.wa { background: #25D366; }
+.footer-socials a.vb { background: #7360F2; }
+.footer-socials a.tt { background: #000; border: 1px solid rgba(255,255,255,.3); }
+.footer-socials a.ig { background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D); }
+.copyright { text-align: center; font-size: .8rem; color: rgba(255,255,255,.5); padding-top: 1.75rem; margin-top: 1.75rem; border-top: 1px solid rgba(255,255,255,.12); }
+
+/* ---------- Появление при скролле ---------- */
+.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s, transform .6s; }
+.js .reveal.visible { opacity: 1; transform: none; }
+.reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+}
+
+/* ---------- Внутренние страницы: тёмный hero с фото ---------- */
+.hero--page {
+  position: relative; color: #fff; padding: 4.5rem 0;
+  background: #000 url("/images/home_page/Fon_glavnaya.webp") center / cover no-repeat;
+}
+.hero--page::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(30,28,22,.6), rgba(30,28,22,.8));
+}
+.hero--page .container { position: relative; }
+.hero--page h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.2; margin-bottom: .75rem; }
+.hero--page .lead { color: rgba(255,255,255,.85); font-size: 1.1rem; max-width: 44rem; }
+
+/* ---------- Сетка карточек (внутренние страницы) ---------- */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+.card {
+  background: #fff; border-radius: .75rem; overflow: hidden;
+  box-shadow: 0 4px 14px rgba(59,56,52,.12);
+  transition: transform .25s, box-shadow .25s;
+  display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 14px 28px rgba(59,56,52,.2); }
+.section-beige .card { background: #fff; }
+.section:not(.section-beige) .card { background: var(--card); }
+.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card-body { padding: 1.25rem; display: flex; flex-direction: column; flex: 1; }
+.card-body h3 { font-size: 1.05rem; margin-bottom: .5rem; }
+.card-body p { font-size: .9rem; color: rgba(59,56,52,.8); flex: 1; }
+.card .btn { margin-top: 1rem; padding: .75rem 1rem; font-size: .9rem; width: 100%; }
+
+/* ---------- Преимущества (внутренние страницы) ---------- */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.feature {
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2);
+  border-radius: .75rem; padding: 1.5rem; text-align: center;
+}
+.feature .icon { font-size: 1.6rem; margin-bottom: .6rem; }
+.feature h3 { font-size: 1rem; margin-bottom: .35rem; color: #fff; }
+.feature p { font-size: .875rem; color: rgba(255,255,255,.75); }
+
+/* Галерея с высокими превью (страница дверей) */
+.gallery-grid .gallery-item.tall img { aspect-ratio: 3 / 4; }
+.contact-item .note { font-size: .8rem; color: rgba(59,56,52,.6); }
+
+
+/* ---------- Многостраничный режим в одном файле ---------- */
+.route[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+section[id], div[id] { scroll-margin-top: 90px; }
+
+</style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#/"><img src="logo.png" alt="Doormet"><span>Doormet</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#/">Главная</a></li>
+          <li><a href="#/uslugi">Услуги</a></li>
+          <li><a href="#/uslugi/dveri">Двери</a></li>
+          <li><a href="#/uslugi/lasernaya-rezka">Лазерная резка</a></li>
+          <li><a href="#/contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a class="header-phone" href="tel:+375298950047">+375 29 895 0047</a>
+        <div class="header-socials">
+          <a class="tg" href="https://t.me/doormet" rel="noopener" aria-label="Telegram">T</a>
+          <a class="wa" href="https://wa.me/375298950047" rel="noopener" aria-label="WhatsApp">W</a>
+          <a class="vb" href="viber://chat?number=%2B375298950047" aria-label="Viber">V</a>
+        </div>
+      </div>
+      <button class="burger" aria-expanded="false" aria-controls="main-nav">Меню ☰</button>
+    </div>
+  </header>
+  <div class="route" data-route="/" data-title="Doormet — изготовление металлических дверей и лазерная резка в Полоцке" data-desc="Профессиональное изготовление металлических дверей, лазерная резка и металлообработка в Полоцке. Бесплатный замер, расчёт и доставка.">
+
+  <!-- Шапка -->
+  
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1 class="brand">Doormet</h1>
+        <p class="lead">Изготовление и установка надёжных металлических дверей и конструкций: навесы, козырьки, ворота, ограждения. Работы любой сложности с использованием лазерной резки листового металла.</p>
+        <ul class="hero-bullets">
+          <li><span class="check">✓</span>Бесплатный выезд на замер</li>
+          <li><span class="check">✓</span>Бесплатный расчёт стоимости</li>
+          <li><span class="check">✓</span>Бесплатная доставка</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#/#contact">Узнать стоимость</a>
+          <a class="btn btn-outline" href="#/#uslugi">Смотреть услуги</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/metal/svarka.webp" alt="Сварщик за работой — производство Doormet">
+        <div class="experience-badge">
+          <div>
+            <div class="num">15+</div>
+            <div class="cap">лет опыта</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section class="section section-beige" id="about">
+    <div class="container">
+      <h2 class="section-title">О нас</h2>
+      <p class="section-subtitle" style="max-width:52rem;margin-left:auto;margin-right:auto">Doormet — это команда профессионалов, специализирующаяся на изготовлении и установке надежных металлических дверей и конструкций: навесы, козырьки, ворота, ограждения. Мы также выполняем работы любой сложности с использованием лазерной резки листового металла. Все изделия проходят точную лазерную резку, профессиональные сварочные работы и получают долговечное защитно-декоративное полимерное покрытие.</p>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M12 8l2.5 2M12 8V5"/><path d="M9 17l-2 4M15 17l2 4M10 21h4"/></svg>
+          </div>
+          <h3>Качество</h3>
+          <p>Используем только проверенные материалы и современное оборудование для достижения наилучшего результата.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9v11h14V9"/><path d="M10 20v-6h4v6"/></svg>
+          </div>
+          <h3>Опыт</h3>
+          <p>Наша команда профессионалов имеет многолетний опыт работы в сфере металлообработки и производства металлических дверей.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9.5 9l2 2 3.5-3.5"/><path d="M8.5 14.5L7 21l5-2.5L17 21l-1.5-6.5"/></svg>
+          </div>
+          <h3>Индивидуальный подход</h3>
+          <p>Учитываем все пожелания клиента и создаем изделия, которые идеально соответствуют вашим требованиям.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Наши услуги -->
+  <section class="section" id="uslugi">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <p class="section-subtitle">Профессиональные решения для вашего дома или бизнеса</p>
+      <div class="services-row">
+        <article class="service-card reveal">
+          <img src="images/doors/dver-1.webp" alt="Изготовление металлических дверей">
+          <div class="body">
+            <h3>Изготовление металлических дверей</h3>
+            <p>Мы создаем эксклюзивные металлические двери любой сложности с учетом индивидуальных пожеланий каждого клиента: входные, тамбурные, по индивидуальным размерам — от замера до установки.</p>
+            <a class="more" href="#/uslugi/dveri">Подробнее →</a>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/rezka-1.webp" alt="Лазерная резка металла">
+          <div class="body">
+            <h3>Лазерная резка металла</h3>
+            <p>Высокоточная резка листового металла любой толщины на современном оборудовании. Изготавливаем детали по вашему чертежу — быстро, точно и без лишних затрат.</p>
+            <a class="more" href="#/uslugi/lasernaya-rezka">Подробнее →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Почему выбирают нас -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас?</h2>
+      <p class="section-subtitle">Гарантия на все изделия</p>
+      <div class="pills">
+        <div class="pill reveal"><span class="check">✓</span>Работаем по официальному договору</div>
+        <div class="pill reveal"><span class="check">✓</span>Фиксируем сроки в договоре</div>
+        <div class="pill reveal"><span class="check">✓</span>Оплата после монтажа</div>
+        <div class="pill reveal"><span class="check">✓</span>Гарантия на все изделия</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Галерея 4x2 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+      <p class="section-subtitle">Галерея выполненных проектов</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/dver-2.webp" alt="Металлическая дверь — пример работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/dver-3.webp" alt="Металлическая дверь — пример работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/dver-4.webp" alt="Металлическая дверь — пример работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/dver-5.webp" alt="Металлическая дверь — пример работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/dver-6.webp" alt="Дверь с деревянным дизайном"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/vorota.webp" alt="Металлические ворота"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/metalloobrabotka.webp" alt="Металлообработка"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/mangal.webp" alt="Мангал с лазерной резкой"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты + форма -->
+  <section class="section section-beige" id="contact">
+    <div class="container contacts-grid">
+      <div>
+        <h2 class="section-title" style="text-align:left">Свяжитесь с нами</h2>
+        <p class="section-subtitle" style="text-align:left">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+
+        <div class="contact-item">
+          <div class="label">Телефон</div>
+          <div class="value"><a href="tel:+375298950047">+375 29 895 0047</a></div>
+          <div class="note" style="font-size:.8rem;color:rgba(59,56,52,.6)">Ежедневно: 8:00 - 18:00</div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:target-555@mail.ru">target-555@mail.ru</a></div>
+          <div class="note" style="font-size:.8rem;color:rgba(59,56,52,.6)">Ответим в течение 24 часов</div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Адрес</div>
+          <div class="value">г. Полоцк, ул. Дзержинского 103, строение 5</div>
+        </div>
+
+        <div class="socials-box">
+          <div class="cap">Мы в мессенджерах и соцсетях</div>
+          <div class="row">
+            <a class="messenger telegram" href="https://t.me/doormet" rel="noopener">Telegram</a>
+            <a class="messenger whatsapp" href="https://wa.me/375298950047" rel="noopener">WhatsApp</a>
+            <a class="messenger viber" href="viber://chat?number=%2B375298950047">Viber</a>
+            <a class="messenger tiktok" href="https://www.tiktok.com/@door_met" rel="noopener">TikTok</a>
+            <a class="messenger instagram" href="https://www.instagram.com/door_met" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Оставить заявку</h3>
+        <p class="hint"><span class="req" style="color:#d4183d">*</span> Поля, обязательные для заполнения</p>
+        <form id="lead-form" novalidate>
+          <div class="form-field">
+            <label for="fullName">Имя <span class="req">*</span></label>
+            <input id="fullName" name="fullName" type="text" placeholder="Введите ваше полное имя">
+            <div class="error" data-error="fullName"></div>
+          </div>
+          <div class="form-field">
+            <label for="phone">Телефон <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="+375 29 000-00-00">
+            <div class="error" data-error="phone"></div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" placeholder="your@email.com">
+            <div class="error" data-error="email"></div>
+          </div>
+          <div class="form-field">
+            <label for="message">Комментарий <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Опишите ваш проект или задайте вопрос"></textarea>
+            <div class="error" data-error="message"></div>
+          </div>
+          <label class="form-check">
+            <input type="checkbox" name="acceptTerms">
+            <span>Согласен с <a href="#/privacy-policy">Политикой обработки персональных данных</a> <span class="req" style="color:#d4183d">*</span></span>
+          </label>
+          <div class="error" data-error="acceptTerms"></div>
+          <button class="btn btn-solid" type="submit" style="width:100%">Отправить заявку</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Карта -->
+  <section class="section" id="map">
+    <div class="container">
+      <h2 class="section-title">Как нас найти</h2>
+      <p class="section-subtitle">г. Полоцк, ул. Дзержинского 103, строение 5</p>
+      <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?ll=28.773802%2C55.478868&z=17&pt=28.773630,55.478910,pm2rdm" title="Карта расположения Doormet" loading="lazy"></iframe>
+      <p class="map-note">* Для получения точного адреса свяжитесь с нами по телефону</p>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  
+
+  <script src="js/main.js" defer></script>
+
+  </div>
+  <div class="route" data-route="/uslugi" data-title="Услуги Doormet — двери, металлоконструкции, лазерная резка" data-desc="Металлические двери, навесы, козырьки, ворота, ограждения, лазерная резка и гибка металла в Полоцке.">
+
+    
+
+  <section class="hero hero--page">
+    <div class="container">
+      <h1>Наши услуги</h1>
+      <p class="lead">Профессиональные решения для вашего дома или бизнеса</p>
+    </div>
+  </section>
+
+  <!-- Изготовление металлических дверей -->
+  <section class="section" id="u-dveri">
+    <div class="container">
+      <h2 class="section-title">Изготовление металлических дверей</h2>
+      <p class="section-subtitle">Мы создаем эксклюзивные металлические двери любой сложности с учетом индивидуальных пожеланий каждого клиента. Наша продукция отличается высоким качеством и надежностью.</p>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/vhodnye.webp" alt="Входные двери">
+          <div class="card-body">
+            <h3>Входные двери</h3>
+            <p>Входные и межкомнатные двери из натуральной древесины. Индивидуальный дизайн и размеры по вашим требованиям.</p>
+            <a class="btn btn-olive" href="#/uslugi/dveri">Узнать подробнее</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/tamburnye.webp" alt="Тамбурные двери">
+          <div class="card-body">
+            <h3>Тамбурные двери</h3>
+            <p>Производство тамбурных дверей любых размеров и конфигураций. Широкий выбор отделки, возможное частичное остекление.</p>
+            <a class="btn btn-olive" href="#/uslugi/dveri">Узнать подробнее</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/individualnye.webp" alt="Двери по индивидуальным размерам">
+          <div class="card-body">
+            <h3>Двери по индивидуальным размерам</h3>
+            <p>Возможно изготовление металлических дверей по индивидуальным размерам с учетом всех пожеланий клиента. От замера до установки.</p>
+            <a class="btn btn-olive" href="#/uslugi/dveri">Узнать подробнее</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Металлообработка и производство -->
+  <section class="section section-beige" id="u-metall">
+    <div class="container">
+      <h2 class="section-title">Металлообработка и производство</h2>
+      <p class="section-subtitle">Лазерная резка и производство металлоконструкций</p>
+      <p class="section-subtitle" style="max-width:760px;margin:0 auto 2.5rem">Профессиональная резка металла, точная обработка деталей на современном оборудовании. Выполняем заказы любой сложности для промышленных и частных нужд.</p>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/cutting.webp" alt="Высокоточная лазерная резка металла">
+          <div class="card-body">
+            <h3>Высокоточная лазерная резка</h3>
+            <p>Лазерная резка металла различной толщины</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/gibka.webp" alt="Гибка металла">
+          <div class="card-body">
+            <h3>Точное сверление и гибка</h3>
+            <p>Сверление отверстий любого диаметра, профессиональное оборудование для гибки металла</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/konstrukcii.webp" alt="Металлоконструкции">
+          <div class="card-body">
+            <h3>Металлоконструкции</h3>
+            <p>Изготовление сложных металлических конструкций</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/svarka-2.webp" alt="Сварочные работы">
+          <div class="card-body">
+            <h3>Сварочные работы</h3>
+            <p>Сварка металлоконструкций любой сложности: MIG/MAG, электродуговая сварка</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/pokraska.webp" alt="Полимерная покраска">
+          <div class="card-body">
+            <h3>Полимерная покраска</h3>
+            <p>Надёжное, долговечное, антивандальное покрытие металлоизделий</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/ceh.webp" alt="Производственный цех">
+          <div class="card-body">
+            <h3>Производственный цех</h3>
+            <p>Современное оборудование для металлообработки, станки последнего поколения</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title">Готовы начать проект?</h2>
+      <p class="section-subtitle">Свяжитесь с нами для получения консультации и расчета стоимости вашего проекта</p>
+      <a class="btn btn-gold" href="#/#contact">Оставить заявку</a>
+    </div>
+  </section>
+
+    
+
+  <script src="js/main.js" defer></script>
+
+  </div>
+  <div class="route" data-route="/uslugi/dveri" data-title="Металлические двери на заказ — Doormet, Полоцк" data-desc="Входные и технические двери на заказ: 13 вариантов отделки, индивидуальные размеры, установка.">
+
+    
+
+  <section class="hero hero--page">
+    <div class="container">
+      <h1>Изготовление металлических дверей</h1>
+      <p class="lead">Входные, тамбурные и двери по индивидуальным размерам — точно по вашим пожеланиям, с замером и доставкой бесплатно</p>
+    </div>
+  </section>
+
+  <!-- Типы дверей -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Виды дверей</h2>
+      <p class="section-subtitle">Изготавливаем любые металлические двери: точно по вашим размерам и пожеланиям</p>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/vhodnye-2.webp" alt="Входные двери">
+          <div class="card-body">
+            <h3>Входные двери</h3>
+            <p>Изготовление входных металлических дверей по индивидуальным размерам, с различной внутренней отделкой и высокой степенью защиты.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/tamburnye-2.webp" alt="Тамбурные двери">
+          <div class="card-body">
+            <h3>Тамбурные двери</h3>
+            <p>Производство тамбурных дверей любых размеров и конфигураций. Широкий выбор внутренней и внешней отделки. Возможное частичное остекление.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/individualnye-2.webp" alt="Двери по индивидуальным размерам">
+          <div class="card-body">
+            <h3>Двери по индивидуальным размерам</h3>
+            <p>Возможно изготовление металлических дверей по индивидуальным размерам с учетом всех пожеланий клиента. От замера до установки готового изделия.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/doors/dopolnitelnye.webp" alt="Дополнительные услуги">
+          <div class="card-body">
+            <h3>Дополнительные услуги</h3>
+            <p>Реставрация металлических дверей, монтаж, демонтаж, доставка, замена и установка замков.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Варианты отделки -->
+  <section class="section section-beige">
+    <div class="container">
+      <h2 class="section-title">Варианты отделки</h2>
+      <p class="section-subtitle">Цвета внутренней и наружной отделки металлических дверей</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/vneshnyaya.webp" alt="Наружные варианты полимерной покраски"><figcaption class="caption">Наружные варианты полимерной покраски</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-antracit.webp" alt="Отделка двери: Антрацит"><figcaption class="caption">Антрацит</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-bezhevyj.webp" alt="Отделка двери: Бежевый"><figcaption class="caption">Бежевый</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-buk-bavaria.webp" alt="Отделка двери: Бук Бавария"><figcaption class="caption">Бук Бавария</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-venge-cavo.webp" alt="Отделка двери: Венге Цаво"><figcaption class="caption">Венге Цаво</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-dub-kraft-seryj.webp" alt="Отделка двери: Дуб Крафт серый"><figcaption class="caption">Дуб Крафт серый</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-dub-kraft-tabachnyj.webp" alt="Отделка двери: Дуб Крафт табачный"><figcaption class="caption">Дуб Крафт табачный</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-dub-sonoma.webp" alt="Отделка двери: Дуб Сонома светлый"><figcaption class="caption">Дуб Сонома светлый</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-kashemir.webp" alt="Отделка двери: Кашемир"><figcaption class="caption">Кашемир</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-klen-amerikanskij.webp" alt="Отделка двери: Клён Американский"><figcaption class="caption">Клён Американский</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-oreh-ekko.webp" alt="Отделка двери: Орех Экко"><figcaption class="caption">Орех Экко</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-seryj-kamen.webp" alt="Отделка двери: Серый камень"><figcaption class="caption">Серый камень</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/otdelka-chernyj.webp" alt="Отделка двери: Чёрный"><figcaption class="caption">Чёрный</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+      <p class="section-subtitle">Галерея выполненных проектов</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-1.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-2.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-3.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-4.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-5.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-6.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-7.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-8.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-9.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-10.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-11.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/doors/rabota-12.webp" alt="Пример выполненной работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title">Хотите такую же дверь?</h2>
+      <p class="section-subtitle">Оставьте заявку — бесплатно рассчитаем стоимость и приедем на замер</p>
+      <a class="btn btn-gold" href="#/#contact">Оставить заявку</a>
+    </div>
+  </section>
+
+    
+
+  <script src="js/main.js" defer></script>
+
+  </div>
+  <div class="route" data-route="/uslugi/lasernaya-rezka" data-title="Лазерная резка металла — Doormet, Полоцк" data-desc="Лазерная резка листового металла, гибка, сварка. Точность, сроки, работа по чертежам заказчика.">
+
+    
+
+  <section class="hero hero--page">
+    <div class="container">
+      <h1>Лазерная резка металла</h1>
+      <p class="lead">Лазерная резка и производство металлоконструкций. Профессиональная резка металла, точная обработка деталей на современном оборудовании. Выполняем заказы любой сложности.</p>
+    </div>
+  </section>
+
+  <!-- Возможности -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Что мы делаем</h2>
+      <p class="section-subtitle">Работаем с черными и цветными металлами различной толщины</p>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/rezka-2.webp" alt="Лазерная резка металла">
+          <div class="card-body">
+            <h3>Лазерная резка металла</h3>
+            <p>Высокоточная лазерная резка металла различной толщины с использованием лазера. Работаем с черными и цветными металлами.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/rezka-tochnaya.webp" alt="Точная резка">
+          <div class="card-body">
+            <h3>Точная резка</h3>
+            <p>Высокоточная резка металла по вашему чертежу — быстро, точно и без лишних затрат.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/rezka-3.webp" alt="Резка металла">
+          <div class="card-body">
+            <h3>Детали по чертежу</h3>
+            <p>Изготавливаем детали по вашему чертежу для промышленных и частных нужд.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img loading="lazy" decoding="async" src="images/metal/pokraska-2.webp" alt="Полимерная покраска">
+          <div class="card-body">
+            <h3>Полимерная покраска</h3>
+            <p>Полимерная покраска металлоизделий — надёжное, долговечное, антивандальное покрытие.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Почему мы -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас?</h2>
+      <p class="section-subtitle">Гарантия на все изделия</p>
+      <div class="features-grid">
+        <div class="feature reveal">
+          <div class="icon">📄</div>
+          <h3>Работаем по официальному договору</h3>
+          <p>Все условия фиксируются документально</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon">⏱️</div>
+          <h3>Фиксируем сроки в договоре</h3>
+          <p>Соблюдаем установленные сроки</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon">💳</div>
+          <h3>Оплата после монтажа</h3>
+          <p>Вы платите за готовый результат</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Работы -->
+  <section class="section section-beige">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+      <p class="section-subtitle">Галерея выполненных проектов</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/rezka-4.webp" alt="Лазерная резка — пример работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/metalloobrabotka-2.webp" alt="Металлообработка — пример работы"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/mangal-2.webp" alt="Мангал с лазерной резкой"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+        <figure class="gallery-item reveal"><img loading="lazy" decoding="async" src="images/metal/stol.webp" alt="Декоративная металлоконструкция"><figcaption class="caption">Работа из портфолио</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title">Готовы начать проект?</h2>
+      <p class="section-subtitle">Свяжитесь с нами для получения консультации и расчета стоимости вашего проекта</p>
+      <a class="btn btn-gold" href="#/#contact">Оставить заявку</a>
+    </div>
+  </section>
+
+    
+
+  <script src="js/main.js" defer></script>
+
+  </div>
+  <div class="route" data-route="/contacts" data-title="Контакты Doormet — Полоцк, ул. Дзержинского 103" data-desc="Адрес, телефон, карта и форма заявки Doormet в Полоцке.">
+
+    
+
+  <section class="hero hero--page">
+    <div class="container">
+      <h1>Наши контакты</h1>
+      <p class="lead">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+    </div>
+  </section>
+
+  <!-- Контакты + форма -->
+  <section class="section">
+    <div class="container contacts-grid">
+      <div>
+        <h2 class="section-title" style="text-align:left">Связаться с нами</h2>
+        <p class="section-subtitle" style="text-align:left">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+
+        <div class="contact-item">
+          <div class="label">Телефон</div>
+          <div class="value"><a href="tel:+375298950047">+375 29 895 0047</a></div>
+          <div class="note">Ежедневно: 8:00 - 18:00</div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:target-555@mail.ru">target-555@mail.ru</a></div>
+          <div class="note">Ответим в течение 24 часов</div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Адрес</div>
+          <div class="value">Полоцк, ул. Дзержинского 103, строение 5</div>
+          <div class="note">Уточните точный адрес по телефону</div>
+        </div>
+
+        <div class="messengers">
+          <a class="messenger whatsapp" href="https://wa.me/375298950047" rel="noopener">WhatsApp</a>
+          <a class="messenger telegram" href="https://t.me/doormet" rel="noopener">Telegram</a>
+          <a class="messenger viber" href="viber://chat?number=%2B375298950047">Viber</a>
+          <a class="messenger tiktok" href="https://www.tiktok.com/@door_met" rel="noopener">TikTok</a>
+          <a class="messenger instagram" href="https://www.instagram.com/door_met" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Оставить заявку</h3>
+        <p class="hint"><span class="req">*</span> Поля, обязательные для заполнения</p>
+        <form id="contacts-lead-form" novalidate>
+          <div class="form-field">
+            <label for="contacts-fullName">ФИО <span class="req">*</span></label>
+            <input id="contacts-fullName" name="fullName" type="text" placeholder="Введите ваше полное имя">
+            <div class="error" data-error="fullName"></div>
+          </div>
+          <div class="form-field">
+            <label for="contacts-phone">Телефон <span class="req">*</span></label>
+            <input id="contacts-phone" name="phone" type="tel" placeholder="+375 29 000-00-00">
+            <div class="error" data-error="phone"></div>
+          </div>
+          <div class="form-field">
+            <label for="contacts-email">Email <span class="req">*</span></label>
+            <input id="contacts-email" name="email" type="email" placeholder="your@email.com">
+            <div class="error" data-error="email"></div>
+          </div>
+          <div class="form-field">
+            <label for="contacts-message">Сообщение <span class="req">*</span></label>
+            <textarea id="contacts-message" name="message" rows="4" placeholder="Опишите ваш проект или задайте вопрос"></textarea>
+            <div class="error" data-error="message"></div>
+          </div>
+          <label class="form-check">
+            <input type="checkbox" name="acceptTerms">
+            <span>Согласен с <a href="#/privacy-policy">Политикой обработки персональных данных</a> <span class="req">*</span></span>
+          </label>
+          <div class="error" data-error="acceptTerms"></div>
+          <button class="btn btn-gold" type="submit" style="width:100%">Отправить заявку</button>
+          <div class="form-status" id="contacts-form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Карта -->
+  <section class="section section-beige">
+    <div class="container">
+      <h2 class="section-title">Как нас найти</h2>
+      <p class="section-subtitle">Полоцк, Беларусь, ул. Дзержинского 103, строение 5</p>
+      <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?ll=28.773802%2C55.478868&z=17&pt=28.773630,55.478910,pm2rdm" title="Карта расположения Doormet" loading="lazy"></iframe>
+      <p class="map-note">* Для получения точного адреса свяжитесь с нами по телефону</p>
+    </div>
+  </section>
+
+    
+
+  <script src="js/main.js" defer></script>
+
+  </div>
+  <div class="route" data-route="/privacy-policy" data-title="Политика обработки персональных данных — Doormet" data-desc="Как Doormet обрабатывает и защищает персональные данные посетителей сайта.">
+
+    
+
+  <main class="section">
+    <div class="container policy">
+      <h1>Политика обработки персональных данных</h1>
+
+      <h2>1. Общие положения</h2>
+      <p>Настоящая Политика обработки персональных данных составлена в соответствии с требованиями Закона Республики Беларусь «О защите персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению их безопасности, предпринимаемые ИП Андилевко Игорь Александрович (далее – ИП, Администрация).</p>
+
+      <h2>2. Основные понятия</h2>
+      <ul>
+        <li><b>Сайт</b> — веб-страница по адресу: https://doormet.by</li>
+        <li><b>Пользователь</b> — физическое лицо, использующее Сайт и/или оставившее заявку.</li>
+        <li><b>Персональные данные</b> — любая информация, относящаяся к Пользователю.</li>
+        <li><b>Администрация</b> — ИП Андилевко Игорь Александрович (УНП 391158465).</li>
+      </ul>
+
+      <h2>3. Какие данные мы собираем</h2>
+      <p>Администрация может получать следующие данные Пользователя: фамилия и имя, номер телефона, адрес электронной почты, текст сообщения, оставленного через форму заявки на Сайте.</p>
+
+      <h2>4. Цели обработки</h2>
+      <p>Данные используются для связи с вами по поводу заказа дверей, металлообработки, консультации или ответа на ваш вопрос.</p>
+
+      <h2>5. Передача данных третьим лицам</h2>
+      <p>Мы не передаём ваши данные третьим лицам и не используем в рекламных целях.</p>
+
+      <h2>6. Меры защиты</h2>
+      <p>Администрация принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного доступа, уничтожения, изменения и распространения.</p>
+
+      <h2>7. Изменение политики</h2>
+      <p>Администрация вправе вносить изменения в настоящую Политику. Актуальная версия всегда размещена на данной странице.</p>
+    </div>
+  </main>
+
+    
+
+  <script src="js/main.js" defer></script>
+
+  </div>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand"><img loading="lazy" decoding="async" src="logo.png" alt="Doormet"><span>Doormet</span></div>
+        <span class="line">Металлообработка и производство</span>
+        <div class="footer-socials">
+          <a class="tg" href="https://t.me/doormet" rel="noopener" aria-label="Telegram">T</a>
+          <a class="wa" href="https://wa.me/375298950047" rel="noopener" aria-label="WhatsApp">W</a>
+          <a class="vb" href="viber://chat?number=%2B375298950047" aria-label="Viber">V</a>
+          <a class="tt" href="https://www.tiktok.com/@door_met" rel="noopener" aria-label="TikTok">T</a>
+          <a class="ig" href="https://www.instagram.com/door_met" rel="noopener" aria-label="Instagram">I</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="line"><a href="tel:+375298950047">+375 29 895 0047</a></span>
+        <span class="line"><a href="mailto:target-555@mail.ru">target-555@mail.ru</a></span>
+        <span class="line">г. Полоцк, ул. Дзержинского 103, строение 5</span>
+      </div>
+      <div class="footer-col">
+        <span class="line"><a href="#/#about">О нас</a></span>
+        <span class="line"><a href="#/#uslugi">Наши услуги</a></span>
+        <span class="line"><a href="#/#contact">Контакты</a></span>
+        <span class="line"><a href="#/privacy-policy">Политика конфиденциальности</a></span>
+      </div>
+    </div>
+    <div class="container copyright">© 2025 Doormet — изготовление металлических дверей и лазерная резка в Полоцке</div>
+  </footer>
+<script>
+/* Doormet — общий JS: меню, форма, появление при скролле */
+(function () {
+  "use strict";
+
+  /* ---------- Мобильное меню ---------- */
+  var burger = document.querySelector(".burger");
+  var nav = document.querySelector(".main-nav");
+  if (burger && nav) {
+    burger.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.textContent = open ? "Закрыть меню ✕" : "Меню ☰";
+    });
+  }
+
+  /* ---------- Появление секций при скролле ---------- */
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          observer.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll(".reveal").forEach(function (el) { observer.observe(el); });
+
+  /* ---------- Форма заявки (Formspree, как в исходной версии) ---------- */
+  var FORMSPREE = "https://formspree.io/f/xnnevwrp";
+  var forms = document.querySelectorAll("form");
+  if (!forms.length) return;
+  Array.prototype.forEach.call(forms, function (form) {
+
+  var phoneInput = form.querySelector("[name=phone]");
+  if (phoneInput) {
+    phoneInput.addEventListener("input", function () {
+      // маска +375 XX-XXX-XXXX
+      var d = phoneInput.value.replace(/\D/g, "");
+      while (d.length > 3 && d.indexOf("375") === 0) d = d.slice(3);
+      d = d.slice(0, 9);
+      var out = "+375";
+      if (d.length > 0) out += " " + d.slice(0, 2);
+      if (d.length > 2) out += "-" + d.slice(2, 5);
+      if (d.length > 5) out += "-" + d.slice(5, 9);
+      phoneInput.value = out;
+    });
+  }
+
+  function setErrors(errors) {
+    form.querySelectorAll(".error").forEach(function (el) { el.textContent = ""; });
+    Object.keys(errors).forEach(function (k) {
+      var slot = form.querySelector('[data-error="' + k + '"]');
+      if (slot) slot.textContent = errors[k];
+    });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    var fullName = (data.get("fullName") || "").trim();
+    var phone = (data.get("phone") || "").trim();
+    var email = (data.get("email") || "").trim();
+    var message = (data.get("message") || "").trim();
+    var accept = form.querySelector("[name=acceptTerms]").checked;
+
+    var errors = {};
+    if (!fullName) errors.fullName = "Поле ФИО обязательно";
+    if (!phone) errors.phone = "Поле Телефон обязательно для заполнения";
+    else if (!/^\+375\s\d{2}-\d{3}-\d{4}$/.test(phone)) errors.phone = "Некорректный формат телефона";
+    if (!email) errors.email = "Поле Email обязательно";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = "Некорректный формат email";
+    if (!message) errors.message = "Поле Сообщение обязательно";
+    if (!accept) errors.acceptTerms = "Необходимо согласие на обработку персональных данных";
+    setErrors(errors);
+
+    var status = form.querySelector(".form-status");
+    if (Object.keys(errors).length) {
+      if (status) { status.textContent = "Пожалуйста, заполните все обязательные поля"; status.className = "form-status err"; }
+      return;
+    }
+
+    fetch(FORMSPREE, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ name: fullName, phone: phone, email: email, message: message })
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error("network");
+        if (status) { status.textContent = "Спасибо! Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время."; status.className = "form-status ok"; }
+        form.reset();
+      })
+      .catch(function () {
+        if (status) { status.textContent = "Не удалось отправить заявку. Позвоните нам: +375 29 895 0047"; status.className = "form-status err"; }
+      });
+  });
+  });
+})();
+
+</script>
+<script>
+
+/* ---------- Заглушки для фото, которых нет рядом с файлом ---------- */
+(function () {
+  function placeholder(img) {
+    if (img.dataset.ph) return;
+    img.dataset.ph = "1";
+    var label = (img.getAttribute("alt") || "Doormet").slice(0, 60);
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">' +
+      '<rect width="800" height="600" fill="#E9E4DA"/>' +
+      '<rect x="24" y="24" width="752" height="552" fill="none" stroke="#C9C1B4" stroke-width="2" stroke-dasharray="10 8"/>' +
+      '<text x="400" y="300" font-family="Arial, sans-serif" font-size="30" fill="#8A8378" text-anchor="middle">' +
+      label.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</text></svg>';
+    img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  }
+  document.querySelectorAll("img").forEach(function (img) {
+    img.addEventListener("error", function () { placeholder(img); });
+    if (img.complete && img.naturalWidth === 0) placeholder(img);
+  });
+})();
+
+</script>
+<script>
+
+/* ---------- Роутинг: один файл, отдельные страницы ---------- */
+(function () {
+  "use strict";
+  var routes = Array.prototype.slice.call(document.querySelectorAll(".route"));
+  var titleEl = document.title;
+  var descEl = document.querySelector('meta[name="description"]');
+
+  function parse() {
+    var h = location.hash || "#/";
+    var rest = h.slice(1);              // "/uslugi#dveri" или "/"
+    var parts = rest.split("#");
+    var path = parts[0] || "/";
+    var anchor = parts[1] || "";
+    if (path === "" || path === "/") path = "/";
+    path = path.replace(/\/+$/, "") || "/";
+    return { path: path, anchor: anchor };
+  }
+
+  function show() {
+    var target = parse();
+    var matched = null;
+    routes.forEach(function (r) {
+      var on = r.getAttribute("data-route") === target.path;
+      r.hidden = !on;
+      if (on) matched = r;
+    });
+    if (!matched) {
+      target.path = "/";
+      routes.forEach(function (r) { r.hidden = r.getAttribute("data-route") !== "/"; });
+      matched = routes[0];
+    }
+    document.title = matched.getAttribute("data-title") || titleEl;
+    var d = matched.getAttribute("data-desc");
+    if (d && descEl) descEl.setAttribute("content", d);
+    document.body.classList.remove("nav-open");
+    if (target.anchor) {
+      var el = document.getElementById(target.anchor);
+      if (el) { el.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    }
+    window.scrollTo(0, 0);
+    if (window.__revealRefresh) window.__revealRefresh();
+  }
+
+  window.addEventListener("hashchange", show);
+  show();
+})();
+
+</script>
+</body>
+</html>
